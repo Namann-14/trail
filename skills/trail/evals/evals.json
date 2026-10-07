@@ -1,0 +1,23 @@
+{
+  "skill_name": "trail",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a small Python CLI todo list app in this repo (todo.py, store.py). Add a delete command that removes a todo by its number. No docs or notes exist yet.",
+      "expected_output": "Scaffolds a light ai-context/ folder, states a plan before coding, implements delete, shows the diff, writes test commands, and flags any unrelated pre-existing bug without fixing it unasked.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "The 'complete' command marks the wrong todo done when there are more than 9 items. Fix it. (Repo already has ai-context/ with HANDOVER, ARCHITECTURE, CONSTRAINTS, DECISIONS.)",
+      "expected_output": "Reads existing context first, uses ARCHITECTURE to locate the cause, fixes it, logs a decision, writes a bug trace and test checklist entry, and updates HANDOVER.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "There's a typo in the README: 'recieve' should be 'receive'. Fix it.",
+      "expected_output": "Fixes the word and creates no files; proportionality respected.",
+      "files": []
+    }
+  ]
+}
